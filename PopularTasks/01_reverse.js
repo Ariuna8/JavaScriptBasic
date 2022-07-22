@@ -25,4 +25,4 @@ console.log(reverseArrayInPlace("interview"));
 
 //3 method Reverse short way
 const reverseStr2 = (str1) => str1.split("").reverse().join("");
-console.log(reverseStr2("hello"));
+
