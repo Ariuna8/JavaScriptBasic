@@ -66,8 +66,7 @@ const receipts = [
   }
 ]
 
-//1. Print out the amount of Chocolate battered doughnuts the customer ordered
-// Answer: 49, 12
+
 let newArr = [];
 for(let i = 0; i < arr.length; i++){
   let sum = 0;
