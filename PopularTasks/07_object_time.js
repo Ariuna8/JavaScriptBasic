@@ -15,7 +15,7 @@ const timesObject = {
   tuesday  : [{ open: '07:00', close: '17:00' }],
   wednesday: [{ open: '07:00', close: '17:00' }],
   thursday : [{ open: '07:00', close: '17:00' }],
-  friday   : [{ open: '07:00', close: '17:00' }],
+  friday   : [{ open: '06:00', close: '17:00' }],
   saturday : [],
   sunday   : [],
 }
@@ -27,9 +27,12 @@ function shapeTimesObjectIntoIterableArray(timesObject) {
   for (let key in timesObject) {
     if(timesObject[key].length){
       open = timesObject[key][0].open
+      console.log(open)
       close = timesObject[key][0].close
-      timeStr =`${open}-${close}`
+      console.log(close)
+      timeStr =`${open}:${close}`
       if(!table[timeStr]){
+
         table[timeStr] = {
           open: open,
           close: close,
@@ -38,6 +41,7 @@ function shapeTimesObjectIntoIterableArray(timesObject) {
       }
       else {
         table[timeStr].days.push(key)
+        console.log(table)
       }
     }
   }
