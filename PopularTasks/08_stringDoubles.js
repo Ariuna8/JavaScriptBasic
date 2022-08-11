@@ -1,5 +1,6 @@
 //In this Kata, you will write a function doubles
 // that will remove double string characters that are adjacent to each other.
+
 let s = 'abbcccdddda';
 function doubles(s){
   let arr =['a',];
