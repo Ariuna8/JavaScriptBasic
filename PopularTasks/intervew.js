@@ -93,5 +93,4 @@ function chocolate(receipts) {
   }
   return {a, b}
 }
-
 console.log(chocolate(receipts))
