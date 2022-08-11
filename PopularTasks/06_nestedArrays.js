@@ -27,6 +27,7 @@ for (let i = 0; i < tasks.length; i++) {
         name : tasks[i].name
       }
     });
+
   } else {
     // if that project is already in the list, append the next entry
     let ind = projectNames.indexOf(tasks[i].project);
