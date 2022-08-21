@@ -1,5 +1,6 @@
 //In this Kata, you will write a function doubles
 // that will remove double string characters that are adjacent to each other.
+
 let string = 'abbcccdddda'
 function removeDuplicate(x){
   let a = x.split('');
@@ -19,3 +20,4 @@ let str = 'hello world'
 const arr = str.split('')
 const nonDuplicatesStr = arr.filter(el => arr.indexOf(el) === arr.lastIndexOf(el));
 console.log(nonDuplicatesStr.join(''))
+

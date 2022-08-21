@@ -32,7 +32,6 @@ function shapeTimesObjectIntoIterableArray(timesObject) {
       console.log(close)
       timeStr =`${open}:${close}`
       if(!table[timeStr]){
-
         table[timeStr] = {
           open: open,
           close: close,
@@ -41,7 +40,6 @@ function shapeTimesObjectIntoIterableArray(timesObject) {
       }
       else {
         table[timeStr].days.push(key)
-        console.log(table)
       }
     }
   }
